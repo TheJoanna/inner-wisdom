@@ -1,0 +1,227 @@
+/* 
+
+    colors: 
+    aqua #13ACC0
+    raisin: #1A1B25
+    light aqua: #D7F7FB
+    off white: #F6F7F8
+
+
+*/
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+img { max-width: 100%; }
+
+[class*=grid] {
+    margin:0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* End temporary styles */
+.tall-10 { min-height: 10vh; }
+.tall-20 { min-height: 20vh; }
+.tall-30 { min-height: 30vh; }
+.tall-40 { min-height: 40vh; }
+.tall-50 { min-height: 50vh; }
+.tall-60 { min-height: 60vh; }
+.tall-70 { min-height: 70vh; }
+.tall-80 { min-height: 80vh; }
+.tall-90 { min-height: 90vh; }
+
+.padded    { padding: 5%;    }
+.padded-10 { padding: 10%;   }
+.padded-1  { padding: 1rem;  }
+.padded-2  { padding: 2rem;  }
+
+.padded-t  { padding-top: 5%;     }
+.padded-b  { padding-bottom: 5%;  }
+.padded-l  { padding-left: 5%;    }
+.padded-r  { padding-right: 5%;   }
+
+.padded-0       { padding: 0; }
+.padded-b-0     { padding-bottom: 0; }
+.margin-b-0     { margin-bottom: 0; }
+.margin-0       { margin: 0; }
+.margin-round   { 
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+
+.bg-aqua     { background-color: #13ACC0; }
+.bg-light    { background-color: #D7F7FB;}
+.bg-dark     { background-color: #1A1B25;  }
+
+.light-text { color: #D7F7FB; } 
+
+
+.left   { text-align: left; }
+.center { text-align: center; }
+.right  { text-align: right; }
+
+
+/* Typography */
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 300;
+    color: #1A1B25;
+}
+
+h2,h3,h4,h5,h6 {
+    margin-bottom: 0.5rem;
+    letter-spacing: -0.01em;
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
+h3 {
+    font-size: 1.8rem;
+}
+
+p  {
+ font-weight: 300;   
+ line-height: 1.3;
+ margin-bottom: 0.8rem;
+ font-size: 1rem;
+}
+
+p:last-child{
+    margin-bottom: 0;
+}
+
+a {
+    color: inherit;
+}
+
+nav a {
+    text-decoration: none;
+    padding: 0.25rem;
+}
+
+a:hover { 
+    background-color: #1A1B25;
+    color: #D7F7FB;
+}
+
+.button {
+  text-decoration: none;
+  border: 2px solid #1A1B25; 
+  padding: 0.5rem 1rem;
+  display: inline-block;
+  font-weight: 400;
+  color: #1A1B25;
+}
+
+.bg-dark .button:hover {
+    color: #13ACC0;
+}
+
+.subtle { 
+    opacity: 0.8;
+    font-size: 0.9rem;
+}
+
+
+
+
+/* Header & Footer  */
+
+header {
+    padding: 2% 5%;
+}
+
+footer a:hover { 
+    color: #13ACC0; 
+}
+
+/* Icon Grid Section  */
+.icon-section img {
+    max-width: 3rem;
+    opacity: 0.8;
+    margin: 1rem 0;
+}
+
+
+/* Background Images */
+
+.bg-image {
+    background-color: #D7F7FB; 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-image: url('/images/assets-2/inner-wisdom-sage.jpg');
+}
+
+.bg-angelcards {
+    background-image: url('/images/assets-1/inner-wisdom-angelcards.jpg');
+    /* background-position: 50% 95%; */
+}
+
+.bg-tarot {
+    background-image: url('/images/assets-1/inner-wisdom-tarot.jpg');
+    opacity: 90%;
+}
+.bg-healing {
+    background-image: url('/images/assets-2/inner-wisdom-healing.png');
+}
+.bg-class {
+    background-image: url('/images/assets-2/inner-wisdom-class.png');
+}
+
+.bg-rmg {
+    background-image: url('/images/assets-2/inner-wisdom-rmg.png');
+}
+
+.bg-plr {
+    background-image: url('/images/assets-2/inner-wisdom-plr-round.png');
+}
+
+.bg-psm {
+    background-image: url('/images/inner-wisdom-logo-1.png');
+}
+
+.bg-blossoms {
+    background-image: url('/images/assets-2/inner-wisdom-blossoms.jpg');
+}
+
+.logo {
+    background-image: url('/images/inner-wisdom-logo-1.png')
+    display: block;
+}
+
+.logo-white {
+    background-image: url('/images/inner-wisdom-logo-2.png)
+}
+
+
+/* SM - max-width in pixels approximately 768px */
+@media(max-width: 48em) {
+
+    .hide-sm {display: none; }
+
+    .center-sm { text-align: center; }
+
+    .flex-flip-sm { flex-direction: column-reverse; }
+
+    .bg-plant {
+        background-image: url('/images/plant-light.png');
+    }
+    
+    .bg-plant-2 {
+        background-image: url('/images/plant-2-light.png');
+        background-position: 45% 50%;
+    }
+
+}
