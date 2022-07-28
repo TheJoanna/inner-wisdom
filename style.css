@@ -5,7 +5,9 @@
     raisin: #1A1B25
     light aqua: #D7F7FB
     off white: #F6F7F8
-
+    beige: #d0ae9c
+    pink 1: #d8b1ad
+    pink 2: #e0c2bf
 
 */
 
@@ -115,7 +117,8 @@ html {
 .bg-aqua     { background-color: #13ACC0; }
 .bg-light    { background-color: #D7F7FB;}
 .bg-dark     { background-color: #1A1B25;  }
-
+.bg-pink     { background-color: #e0c2bf;
+}
 
 /* Image Styles --------------------------------------*/
 
@@ -145,6 +148,10 @@ body {
 .right       { text-align: right;   }
 .justify     { text-align: justify; }
 
+h1 {
+    font-family: "Abel", sans-serif;
+}
+
 h2,h3,h4,h5,h6 {
     margin-bottom: 0.5rem;
     letter-spacing: -0.01em;
@@ -152,7 +159,7 @@ h2,h3,h4,h5,h6 {
 
 h2  { font-size: 2.5rem; }
 h3  { font-size: 1.8rem; }
-h4  { font-size: 1.25rem; }
+h4  { font-size: 1rem; }
 
 p  {
     font-weight: 300;   
@@ -160,7 +167,12 @@ p  {
     margin-bottom: 0.8rem;
     font-size: 1rem;
    }
-
+h1:last-child,
+h2:last-child
+h3:last-child
+h4:last-child
+h5:last-child
+h6:last-child
 p:last-child {
     margin-bottom: 0;
 }
@@ -177,16 +189,17 @@ a:hover {
 .font-weight-light          { font-weight: 200;    }
 .font-weight-extra-bold     { font-weight: 800;    }
 
-.featured-text { color: beige; }
+.featured-text { color: #13ACC0; }
 .light-text { color: #D7F7FB; } 
 
 .small-text     { font-size: 1.5rem;   }
 .medium-text    { font-size: 2rem;     }
 .big-text       { font-size: 4.5rem;   }
 
-.subtitle { 
-    font-size: 1.2rem;    
-    color: rgb(120,120,125);
+.subtle { 
+    font-size: 1rem;    
+    color: #D7F7FB;
+    padding-top: 10%;
 }
 
 
@@ -197,6 +210,7 @@ a:hover {
     text-align: center;
     margin-bottom: 2rem;
     font-size: 3rem;
+    color: #D7F7FB;
  }
 
 
@@ -204,7 +218,6 @@ a:hover {
 
  /* Background image disappears completely when size & postion are added (both independently and together) */
  header {
-    background-image: url('images/the-sleep-co-4.jpg');
     background-size: cover;
     background-position: center;
     padding: 2% 5%;
@@ -213,6 +226,17 @@ a:hover {
  header h3 {
     font-size: 5.5rem;
     line-height: 1;
+ }
+
+ header h1 {
+    display: inline-block;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 1.5rem;
+ }
+
+ header h1:hover {
+    color: #13ACC0;
  }
 
 nav a {
@@ -238,11 +262,16 @@ nav a:hover {
 }
 
 .logo-white {
-    background-image: url('/images/inner-wisdom-logo-1.png');
+    background-image: url('/images/inner-wisdom-logo-2.png');
+    display: block;
+    background-repeat: no-repeat;
+    background-size: 30%;
+    background-position: center;
 }
 
 footer a {
-    border: none;
+    display: inline-block;
+    text-decoration: none;
 }
 
 footer a:hover { 
@@ -260,15 +289,29 @@ footer a:hover {
     background-image: url('/images/assets-2/inner-wisdom-blossoms.jpg');
 }
 
+.bg-contact {
+    background-image: url('images/assets-1/inner-wisdom-contact-2.jpg')
+}
+
 .bg-tarot {
     background-image: url('/images/assets-1/inner-wisdom-tarot.jpg');
     opacity: 90%;
 }
+
+.bg-hands {
+    background-image: url('images/assets-1/inner-wisdom-hands.jpg')
+}
+
 .bg-healing {
     background-image: url('/images/assets-1/inner-wisdom-healing.jpg');
 }
 .bg-class {
     background-image: url('/images/assets-2/inner-wisdom-class.png');
+}
+
+.bg-oil {
+    background-image: url('images/assets-1/inner-wisdom-oil.jpg');
+    background-position: 75% 50%;
 }
 
 .bg-plr {
@@ -282,6 +325,13 @@ footer a:hover {
 
 .bg-rmg {
     background-image: url('/images/assets-1/inner-wisdom-rmg.png');
+    background-position: center;
+}
+
+.bg-us {
+    background-image: url('/images/assets-1/inner-wisdom-us.jpg');
+    background-size: cover;
+    background-position: 50% 0%;
 }
 
 
@@ -300,13 +350,17 @@ textarea {
 
 input:focus,
 textarea:focus {
-    border: 2px solid #FFBE00;
+    border: 2px solid #13ACC0;
     outline: none;
+ }
+
+ .mob-form {
+    width: 100%;
  }
 
  .button {
     padding: 0.5rem 1rem;
-    margin: 0;
+    margin: 0rem;
     appearance: none;
     border: 2px solid #1A1B25; 
     color: #1A1B25;
@@ -321,20 +375,24 @@ textarea:focus {
     background-color: #1A1B25;
 } 
 
-.bg-dark .button:hover {
-    color: #13ACC0;
+.button-form {
+    padding: 0.5rem 1rem;
+    margin: 0rem;
+    appearance: none;
+    border: 2px solid #D7F7FB; 
+    color: #D7F7FB;
+    font-family: inherit;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.1rem;
+    display: inline-block;
+    background-color: #1A1B25;
 }
 
-
-/* Testimonial Block  ----------------------------*/
-/* This is for the quote icons */
-
-.quote-icon {
-    font-size: 6rem;
-    color: rgb(120,120,125);
-    line-height: 1;
-    display: inline-block;
- }
+.button-form:hover {
+    color: #1A1B25;
+    background-color: #D7F7FB;
+}
 
 
 /*--------------------------------- Media Queries  ---------------------------------*/
@@ -348,6 +406,16 @@ textarea:focus {
     .center-sm { text-align: center; }
 
     .flex-flip-sm { flex-direction: column-reverse; }
+
+    .mob-padded-t { padding-top: 5%; }
+
+    .mob-shrink-20 { max-width: 20vh;}
+
+    .mob-padded { 
+        padding-top: 10%;
+        padding-bottom: 10%;
+     }
+
 
     /* .bg-plant {
         background-image: url('/images/plant-light.png');
