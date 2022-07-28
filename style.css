@@ -9,6 +9,8 @@
 
 */
 
+/* CSS reset */
+
 * {
     padding: 0;
     margin: 0;
@@ -26,135 +28,96 @@ html {
 }
 
 
-/* End temporary styles */
-.tall-10 { min-height: 10vh; }
-.tall-20 { min-height: 20vh; }
-.tall-30 { min-height: 30vh; }
-.tall-40 { min-height: 40vh; }
-.tall-50 { min-height: 50vh; }
-.tall-60 { min-height: 60vh; }
-.tall-70 { min-height: 70vh; }
-.tall-80 { min-height: 80vh; }
-.tall-90 { min-height: 90vh; }
+/* temporary styles for sturctual html */
 
-.padded    { padding: 5%;    }
-.padded-10 { padding: 10%;   }
-.padded-1  { padding: 1rem;  }
-.padded-2  { padding: 2rem;  }
+/* section { */
+    /* border: 1px solid rgb(240,240,240); */
+/* } */
 
-.padded-t  { padding-top: 5%;     }
-.padded-b  { padding-bottom: 5%;  }
-.padded-l  { padding-left: 5%;    }
-.padded-r  { padding-right: 5%;   }
 
-.padded-0       { padding: 0; }
-.padded-b-0     { padding-bottom: 0; }
-.margin-b-0     { margin-bottom: 0; }
-.margin-0       { margin: 0; }
-.margin-round   { 
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-}
 
+ /*-------------------------- Universal styles & utility classes -------------------------*/
+ 
+ /* Padding Utility Classes --------------------------*/
+.padded     { padding: 5%;   }
+.padded-sm  { padding: 1rem; }
+.padded-lg  { padding: 10%;  }
+
+.padded-05  { padding: 0.5rem; }
+.padded-1   { padding: 1rem;   }
+.padded-2   { padding: 2rem;   }
+
+.padded-t   { padding-top: 5%;    }
+.padded-b   { padding-bottom: 5%; }
+.padded-l   { padding-left: 5%;   }
+.padded-r   { padding-right: 5%;  }
+
+.padded-tb  { padding-top: 5%; padding-bottom: 5%; }
+.padded-lr  { padding-left: 5%; padding-right: 5%; }
+
+.padded-t-1 { padding-top: 1rem;    }
+.padded-b-1 { padding-bottom: 1rem; }
+.padded-l-1 { padding-left: 1rem;   }
+.padded-r-1 { padding-right: 1rem;  }
+
+.padded-t-2 { padding-top: 2rem;    }
+.padded-b-2 { padding-bottom: 2rem; }
+.padded-l-2 { padding-left: 2rem;   }
+.padded-r-2 { padding-right: 2rem;  }
+
+.padded-t-0 { padding-top: 0;    }
+.padded-b-0 { padding-bottom: 0; }
+.padded-l-0 { padding-left: 0;   }
+.padded-r-0 { padding-right: 0;  }
+
+
+/*   Margin utility Classes   --------------------------*/
+.margin-t   { margin-top: 5%;    }
+.margin-b   { margin-bottom: 5%; }
+.margin-l   { margin-left: 5%;   }
+.margin-r   { margin-right: 5%;  }
+
+.margin-t-1 { margin-top: 1rem;    }
+.margin-b-1 { margin-bottom: 1rem; }
+.margin-l-1 { margin-left: 1rem;   }
+.margin-r-1 { margin-right: 1rem;  }
+
+.margin-t-2 { margin-top: 2rem;    }
+.margin-b-2 { margin-bottom: 2rem; }
+.margin-l-2 { margin-left: 2rem;   }
+.margin-r-2 { margin-right: 2rem;  }
+
+.margin-t-0 { margin-top: 0;    }
+.margin-b-0 { margin-bottom: 0; }
+.margin-l-0 { margin-left: 0;   }
+.margin-r-0 { margin-right: 0;  }
+
+.margin-tb  { margin-top: 5%; margin-bottom: 5%; }
+.margin-lr  { margin-left: 5%; margin-right: 5%; }
+
+
+/* Minimum Height Classes ----------------------------*/
+
+.tall-10    { min-height: 10vh; }
+.tall-20    { min-height: 20vh; }
+.tall-30    { min-height: 30vh; }
+.tall-40    { min-height: 40vh; }
+.tall-50    { min-height: 50vh;   }
+.tall-60    { min-height: 60vh;   }
+.tall-70    { min-height: 70vh;   }
+.tall-80    { min-height: 80vh;   }
+.tall-90    { min-height: 90vh;   }
+.tall-100   { min-height: 100vh;  }
+
+
+/* Backgrounds & Images -------------------------------*/
 
 .bg-aqua     { background-color: #13ACC0; }
 .bg-light    { background-color: #D7F7FB;}
 .bg-dark     { background-color: #1A1B25;  }
 
-.light-text { color: #D7F7FB; } 
 
-
-.left   { text-align: left; }
-.center { text-align: center; }
-.right  { text-align: right; }
-
-
-/* Typography */
-
-body {
-    font-family: 'Source Sans Pro', sans-serif;
-    font-weight: 300;
-    color: #1A1B25;
-}
-
-h2,h3,h4,h5,h6 {
-    margin-bottom: 0.5rem;
-    letter-spacing: -0.01em;
-}
-
-h2 {
-    font-size: 2.5rem;
-}
-
-h3 {
-    font-size: 1.8rem;
-}
-
-p  {
- font-weight: 300;   
- line-height: 1.3;
- margin-bottom: 0.8rem;
- font-size: 1rem;
-}
-
-p:last-child{
-    margin-bottom: 0;
-}
-
-a {
-    color: inherit;
-}
-
-nav a {
-    text-decoration: none;
-    padding: 0.25rem;
-}
-
-a:hover { 
-    background-color: #1A1B25;
-    color: #D7F7FB;
-}
-
-.button {
-  text-decoration: none;
-  border: 2px solid #1A1B25; 
-  padding: 0.5rem 1rem;
-  display: inline-block;
-  font-weight: 400;
-  color: #1A1B25;
-}
-
-.bg-dark .button:hover {
-    color: #13ACC0;
-}
-
-.subtle { 
-    opacity: 0.8;
-    font-size: 0.9rem;
-}
-
-
-
-
-/* Header & Footer  */
-
-header {
-    padding: 2% 5%;
-}
-
-footer a:hover { 
-    color: #13ACC0; 
-}
-
-/* Icon Grid Section  */
-.icon-section img {
-    max-width: 3rem;
-    opacity: 0.8;
-    margin: 1rem 0;
-}
-
-
-/* Background Images */
+/* Image Styles --------------------------------------*/
 
 .bg-image {
     background-color: #D7F7FB; 
@@ -164,9 +127,137 @@ footer a:hover {
     background-image: url('/images/assets-2/inner-wisdom-sage.jpg');
 }
 
+.landscape { padding-bottom: 65%;  }
+.portrait  { padding-bottom: 125%; }
+.square    { padding-bottom: 100%; }
+
+
+/* Typography Styles --------------------------------*/
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 300;
+    color: #1A1B25;
+}
+
+.left        { text-align: left;    }
+.center      { text-align: center;  }
+.right       { text-align: right;   }
+.justify     { text-align: justify; }
+
+h2,h3,h4,h5,h6 {
+    margin-bottom: 0.5rem;
+    letter-spacing: -0.01em;
+}
+
+h2  { font-size: 2.5rem; }
+h3  { font-size: 1.8rem; }
+h4  { font-size: 1.25rem; }
+
+p  {
+    font-weight: 300;   
+    line-height: 1.3;
+    margin-bottom: 0.8rem;
+    font-size: 1rem;
+   }
+
+p:last-child {
+    margin-bottom: 0;
+}
+
+a {
+    color: inherit;
+}
+
+a:hover { 
+    color: #D7F7FB;
+}
+
+.font-weight-normal         { font-weight: normal; }
+.font-weight-light          { font-weight: 200;    }
+.font-weight-extra-bold     { font-weight: 800;    }
+
+.featured-text { color: beige; }
+.light-text { color: #D7F7FB; } 
+
+.small-text     { font-size: 1.5rem;   }
+.medium-text    { font-size: 2rem;     }
+.big-text       { font-size: 4.5rem;   }
+
+.subtitle { 
+    font-size: 1.2rem;    
+    color: rgb(120,120,125);
+}
+
+
+/* Font Awesome Icons --------------------------*/
+ 
+.fa-solid {
+    display: block;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 3rem;
+ }
+
+
+ /* Header & Footer Styles --------------------*/
+
+ /* Background image disappears completely when size & postion are added (both independently and together) */
+ header {
+    background-image: url('images/the-sleep-co-4.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 2% 5%;
+ }
+
+ header h3 {
+    font-size: 5.5rem;
+    line-height: 1;
+ }
+
+nav a {
+    display: inline-block;
+    padding: 0.5rem;
+    margin-right: 0.5rem;
+    text-transform: uppercase;
+    border: none;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #13ACC0;
+}
+
+.logo h2 { 
+    margin-bottom: 0;
+}
+
+.logo {
+    background-image: url('/images/inner-wisdom-logo-1.png');
+    display: block;
+}
+
+.logo-white {
+    background-image: url('/images/inner-wisdom-logo-1.png');
+}
+
+footer a {
+    border: none;
+}
+
+footer a:hover { 
+    color: #13ACC0; 
+}
+
+
+/* Background Images -------------------------*/
+
 .bg-angelcards {
     background-image: url('/images/assets-1/inner-wisdom-angelcards.jpg');
-    /* background-position: 50% 95%; */
+}
+
+.bg-blossoms {
+    background-image: url('/images/assets-2/inner-wisdom-blossoms.jpg');
 }
 
 .bg-tarot {
@@ -174,36 +265,79 @@ footer a:hover {
     opacity: 90%;
 }
 .bg-healing {
-    background-image: url('/images/assets-2/inner-wisdom-healing.png');
+    background-image: url('/images/assets-1/inner-wisdom-healing.jpg');
 }
 .bg-class {
     background-image: url('/images/assets-2/inner-wisdom-class.png');
 }
 
-.bg-rmg {
-    background-image: url('/images/assets-2/inner-wisdom-rmg.png');
-}
-
 .bg-plr {
-    background-image: url('/images/assets-2/inner-wisdom-plr-round.png');
+    background-image: url('/images/assets-1/inner-wisdom-plr-1.png');
 }
 
 .bg-psm {
-    background-image: url('/images/inner-wisdom-logo-1.png');
+    background-image: url('/images/assets-1/inner-wisdom-psm.jpg');
+    background-position: 50% 35%;
 }
 
-.bg-blossoms {
-    background-image: url('/images/assets-2/inner-wisdom-blossoms.jpg');
+.bg-rmg {
+    background-image: url('/images/assets-1/inner-wisdom-rmg.png');
 }
 
-.logo {
-    background-image: url('/images/inner-wisdom-logo-1.png')
+
+/* Buttons & Forms  -----------------------------*/
+ 
+input,
+textarea {
+    width: 100%;
     display: block;
+    margin-bottom: 0.3rem;
+    padding: 0.5rem;
+    font-family: inherit;
+    font-size: 0.9rem;
+    border: 2px solid transparent;
+ }
+
+input:focus,
+textarea:focus {
+    border: 2px solid #FFBE00;
+    outline: none;
+ }
+
+ .button {
+    padding: 0.5rem 1rem;
+    margin: 0;
+    appearance: none;
+    border: 2px solid #1A1B25; 
+    color: #1A1B25;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: inline-block;
+  }
+
+.button:hover {
+    color: #D7F7FB; 
+    background-color: #1A1B25;
+} 
+
+.bg-dark .button:hover {
+    color: #13ACC0;
 }
 
-.logo-white {
-    background-image: url('/images/inner-wisdom-logo-2.png)
-}
+
+/* Testimonial Block  ----------------------------*/
+/* This is for the quote icons */
+
+.quote-icon {
+    font-size: 6rem;
+    color: rgb(120,120,125);
+    line-height: 1;
+    display: inline-block;
+ }
+
+
+/*--------------------------------- Media Queries  ---------------------------------*/
 
 
 /* SM - max-width in pixels approximately 768px */
@@ -215,13 +349,13 @@ footer a:hover {
 
     .flex-flip-sm { flex-direction: column-reverse; }
 
-    .bg-plant {
+    /* .bg-plant {
         background-image: url('/images/plant-light.png');
     }
     
     .bg-plant-2 {
         background-image: url('/images/plant-2-light.png');
         background-position: 45% 50%;
-    }
+    } */
 
 }
