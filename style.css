@@ -167,7 +167,7 @@ p  {
     font-family: 'Lato', sans-serif;
     font-weight: 300;   
     line-height: 1.4;
-    margin-bottom: 0.8rem;
+    margin-bottom: 1.4rem;
     font-size: 1rem;
    }
 
@@ -411,13 +411,18 @@ textarea:focus {
 
     .flex-flip-sm  { flex-direction: column-reverse; }
 
-    .mob-padded-t  { padding-top: 5%; }
+    .mob-padded-t-5     { padding-top: 5%; }
+    .mob-padded-t-12    { padding-top: 12%; }
+
+    .mob-padded-2       { padding: 2rem; }
+
 
     .mob-shrink-20 { max-width: 20vh;}
 
     .mob-padded { 
-        padding-top: 10%;
-        padding-bottom: 10%;
+        padding: 10%;
+        padding-top: 15%;
+        padding-bottom: 15%;
      }
 
 
