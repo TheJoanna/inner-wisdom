@@ -222,9 +222,13 @@ a:hover {
 
  /* Background image disappears completely when size & postion are added (both independently and together) */
  header {
+    background-color: white;
     background-size: cover;
     background-position: center;
     padding: 2% 5%;
+    width: 100%;
+    position: fixed;
+    top: 0;
  }
 
  header h3 {
