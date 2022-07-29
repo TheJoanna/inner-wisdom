@@ -91,6 +91,11 @@ html {
 .margin-l-2 { margin-left: 2rem;   }
 .margin-r-2 { margin-right: 2rem;  }
 
+.margin-t-3 { margin-top: 3rem;    }
+.margin-b-3 { margin-bottom: 3rem; }
+.margin-l-3 { margin-left: 3rem;   }
+.margin-r-3 { margin-right: 3rem;  }
+
 .margin-t-0 { margin-top: 0;    }
 .margin-b-0 { margin-bottom: 0; }
 .margin-l-0 { margin-left: 0;   }
@@ -98,6 +103,8 @@ html {
 
 .margin-tb  { margin-top: 5%; margin-bottom: 5%; }
 .margin-lr  { margin-left: 5%; margin-right: 5%; }
+
+.margin-t-5 { margin-top: 5rem; }
 
 
 /* Minimum Height Classes ----------------------------*/
@@ -405,6 +412,10 @@ textarea:focus {
 
 /*--------------------------------- Media Queries  ---------------------------------*/
 
+/* BW Medium and Small - max-width in pixels approximately 794px */
+@media(max-width: 50em) {
+    header h1      { font-size: 1.4rem; }
+}
 
 /* SM - max-width in pixels approximately 768px */
 @media(max-width: 48em) {
@@ -429,14 +440,5 @@ textarea:focus {
         padding-bottom: 15%;
      }
 
-
-    /* .bg-plant {
-        background-image: url('/images/plant-light.png');
-    }
-    
-    .bg-plant-2 {
-        background-image: url('/images/plant-2-light.png');
-        background-position: 45% 50%;
-    } */
-
 }
+
