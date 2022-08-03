@@ -19,7 +19,9 @@
     box-sizing: border-box;
 }
 
-img { max-width: 100%; }
+img { 
+    max-width: 100%; 
+}
 
 [class*=grid] {
     margin:0;
@@ -284,6 +286,10 @@ nav a:hover {
     background-position: center;
 }
 
+.shrink-logo {
+    max-width: 50%;
+}
+
 footer a {
     display: inline-block;
     text-decoration: none;
@@ -293,6 +299,10 @@ footer a:hover {
     color: #13ACC0; 
 }
 
+footer h4 {
+    font-size: 1.5rem;
+    color: white;
+}
 
 /* Background Images -------------------------*/
 
