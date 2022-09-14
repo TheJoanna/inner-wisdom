@@ -304,6 +304,12 @@ footer h4 {
     color: white;
 }
 
+.copyright {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 0.9rem;
+    color: white;
+}
+
 /* Background Images -------------------------*/
 
 .bg-angelcards {
